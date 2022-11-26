@@ -6,4 +6,162 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Write CSS code below */
+.main-content {
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+
+body {
+    background-color: #a6abad;
+    display: block;
+    margin: 0;
+}
+
+section {
+    display: block;
+}
+
+.left-section {
+    grid-column: span 1;
+    background-color: #242531;
+    color: #f7f7f7;
+}
+
+.right-section {
+    grid-column: span 1 / span 2;
+    background-color: #f7f7f7;
+}
+
+.left-content {
+    padding: 1rem;
+}
+
+.profile-image {
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.02px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.8rem;
+}
+
+.designation {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.icon {
+    width: 30px;
+}
+
+img {
+    fill: currentColor;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.skills-title {
+    text-align: center;
+    padding: 1rem 0.5rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+
+}
+
+.skill-name {
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+
+.skill-item{
+    padding: 10px;
+}
+
+.personal-details>li {
+    display: flex;
+    font-size: 0.75rem;
+    White-space: nowrap;
+}
+
+.personal-details>li>img {
+    padding:0 10px 10px 0;
+}
+
+.progress-bar {
+    border: 1px solid white;
+    height: 4px;
+    background-color: white;
+}
+
+.right-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.about-section, .education-section , .experience-section , .project-section {
+    padding-bottom: 10px;
+}
+
+.education-content, .experience-content, .porject-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.right-main-content {
+    font-size: 18px;
+    padding: 2rem 3rem;
+}
+
+.university-year, .compony {
+    width: 25%;
+}
+
+.experience-details, .education-details, .porject-details {
+    width: 70%;
+}
+
+.icon>img, .social-media>li>a>img {
+    filter: invert(100%);
+}
+
+.list>li {
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+@media screen and (max-width: 673px) {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
